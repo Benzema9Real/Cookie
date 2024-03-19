@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Количество посещений: {{ visit_count }}</h1>
+<form action="{% url 'set_cookie' %}" method="get">
+<input type="submit" value="Увеличить счетчик">
+</form>
+<a href="{% url 'deletecookie' %}">deletecookie</a>
+</body>
+</html>
