@@ -17,7 +17,7 @@
                 <li>{{ user.nameNew }}</li>
             {% endfor %}
         </ul>
-        {% if users.has_previous or users.has_next %}
+{% if users.has_previous or users.has_next %}
             <nav>
                 {% if users.has_previous %}
                     <a href="?page={{ users.previous_page_number }}">Предыдущая</a>
